@@ -54,7 +54,7 @@ public class Services {
         lst = new controller.ServicesController().getAll();
     }
     
-    public void save(){
+    public boolean save(){
         model.Services s = new model.Services();
         s.setName(name);
         Users u = new Users();
